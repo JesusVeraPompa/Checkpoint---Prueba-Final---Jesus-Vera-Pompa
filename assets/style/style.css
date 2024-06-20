@@ -12,8 +12,38 @@
 }
 /*--------------------------------------- Header Styles ---------------------------------------*/
 header {
-    min-height: 15vh;
-    background-color: blueviolet;
+    min-height: 5vh;
+    background-color: black;
+    border-top: 1px solid white;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo-navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.logo-navbar>.red{
+    color: red;
+}
+.logo-navbar>.white{
+    color:white;
+}
+.menu-navbar>nav>a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+.active{
+    background-color: red;
+    border-radius: 20px;
 }
 /*--------------------------------------- Main Styles -----------------------------------------*/
 main {
@@ -22,8 +52,9 @@ main {
 }
 /*--------------------------------------- Footer Styles ---------------------------------------*/
 footer {
-    min-height: 5vh;
+    min-height: 12vh;
     background-color: brown;
+    border-bottom: 1px solid white;
 }
 
 /*---------------------------------------------------------------------------------------------*/
