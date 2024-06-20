@@ -16,32 +16,35 @@ header {
     background-color: black;
     border-top: 1px solid white;
 }
-.navbar{
+.navbar {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 10px;
 }
-.logo-navbar{
+.logo-navbar {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 5px;
 }
-.logo-navbar>.red{
+.logo-navbar > .red {
     color: red;
 }
-.logo-navbar>.white{
-    color:white;
+.logo-navbar > .white {
+    color: white;
 }
-.menu-navbar>nav>a{
+.menu-navbar {
+    padding: 10px;
+}
+.menu-navbar > nav > a {
     text-decoration: none;
     color: white;
     padding: 10px;
 }
-.active{
+.active {
     background-color: red;
     border-radius: 20px;
 }
@@ -53,10 +56,45 @@ main {
 /*--------------------------------------- Footer Styles ---------------------------------------*/
 footer {
     min-height: 12vh;
-    background-color: brown;
+    background-color: black;
     border-bottom: 1px solid white;
 }
-
+.div-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+}
+.div-footer > div {
+    padding: 5px;
+}
+.center-footer {
+    color: white;
+    font-size: 10px;
+}
+form > fieldset {
+    padding: 5px;
+}
+form > fieldset > legend {
+    font-size: 16px;
+}
+form > fieldset > .radios {
+    padding-left: 8px;
+}
+form > fieldset > .radios > label {
+    font-size: 18px;
+}
+form > fieldset > .send {
+    padding: 5px;
+}
+.email-footer > h3 > a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: lighter;
+}
 /*---------------------------------------------------------------------------------------------*/
 /*--------------------------------------- Media Queries ---------------------------------------*/
 /*---------------------------------------------------------------------------------------------*/
@@ -66,12 +104,38 @@ footer {
     /*-------------------------- Header Styles --------------------------*/
     /*-------------------------- Main Styles ----------------------------*/
     /*-------------------------- Footer Styles --------------------------*/
+    form > fieldset > legend {
+        font-size: 15px;
+    }
+    form > fieldset > .radios > label {
+        font-size: 15px;
+    }
+    form > fieldset > .send > label {
+        font-size: 15px;
+    }
 }
 /*------------------------------------------- 1024px -------------------------------------------*/
 @media screen and (min-width: 1024px) {
     /*-------------------------- Header Styles --------------------------*/
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
     /*-------------------------- Main Styles ----------------------------*/
     /*-------------------------- Footer Styles --------------------------*/
+    .div-footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    form > fieldset > legend {
+        font-size: 14px;
+    }
+    form > fieldset > .radios > label {
+        font-size: 14px;
+    }
+    form > fieldset > .send > label {
+        font-size: 14px;
+    }
 }
 /*------------------------------------------- 1440px -------------------------------------------*/
 @media screen and (min-width: 1440px) {
